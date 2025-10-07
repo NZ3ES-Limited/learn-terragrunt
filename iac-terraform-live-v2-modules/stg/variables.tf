@@ -16,3 +16,6 @@ variable "azure_client_secret" {
   description = "Azure Client Secret"
   type        = string
 }
+variable "environment" {
+  default = "tfmodule-dev"
+}
