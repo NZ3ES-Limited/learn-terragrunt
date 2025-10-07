@@ -1,7 +1,7 @@
 variable "environment" {
   description = "Environment"
   type        = string
-  default     = "dev"
+  default     = "tf-dev"
 }
 
 variable "location" {
