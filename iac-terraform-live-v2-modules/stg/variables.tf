@@ -17,5 +17,7 @@ variable "azure_client_secret" {
   type        = string
 }
 variable "environment" {
-  default = "tfmodule-dev"
+  type        = string
+  description = "Environment"
+  default     = "tfmodule-stg"
 }
