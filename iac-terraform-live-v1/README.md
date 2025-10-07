@@ -2,6 +2,26 @@
 
 Folder (iac-terraform-live-v1) contains terraform code for deploying vnet and subnets to dev and stg (staging) environments
 
+## Folder strucure
+
+``` bash
+iac-terraform-live-v1
+├── dev
+│   ├── 01-provider.tf
+│   ├── 10-rg.tf
+│   ├── 11-network.tf
+│   ├── 80-outputs.tf
+│   └── 99-variables.tf
+├── README.md
+└── stg
+    ├── 01-provider.tf
+    ├── 10-rg.tf
+    ├── 11-network.tf
+    ├── 80-outputs.tf
+    └── 99-variables.tf
+
+```
+
 ## Initialise Variables
 
 ```shell

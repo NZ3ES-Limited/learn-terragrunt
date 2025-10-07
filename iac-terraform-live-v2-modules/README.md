@@ -4,6 +4,7 @@ Created a module from the terraform code folder iac-terraform-live-v1
 
 ## Tree Structure
 
+```bash
 iac-terraform-live-v2-modules
 ├── dev
 │   ├── main.tf
@@ -19,6 +20,7 @@ iac-terraform-live-v2-modules
 │       ├── outputs.tf
 │       └── variables.tf
 ├── README.md
+```
 
 ## Initialise Variables
 
