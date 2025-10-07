@@ -22,11 +22,11 @@ az storage container create \
   --name $CONTAINER_NAME \
   --account-name $STORAGE_ACCOUNT_DEV
 
-echo "Getting storage account keys..."
-DEV_KEY=$(az storage account keys list \
-  --resource-group $RESOURCE_GROUP_NAME \
-  --account-name $STORAGE_ACCOUNT_DEV \
-  --query '[0].value' -o tsv)
+# echo "Getting storage account keys..."
+# DEV_KEY=$(az storage account keys list \
+#   --resource-group $RESOURCE_GROUP_NAME \
+#   --account-name $STORAGE_ACCOUNT_DEV \
+#   --query '[0].value' -o tsv)
 
 echo ""
 echo "Backend setup complete!"
