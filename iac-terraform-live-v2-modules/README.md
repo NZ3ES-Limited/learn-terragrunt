@@ -10,16 +10,24 @@ iac-terraform-live-v2-modules
 │   ├── main.tf
 │   ├── provider.tf
 │   └── variables.tf
-├── stg
-│    ├── main.tf
-│    ├── provider.tf
-│    └── variables.tf
 ├── modules
+│   ├── jumpbox
+│   │   ├── init.sh
+│   │   ├── local.tf
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── variables.tf
 │   └── network
 │       ├── main.tf
 │       ├── outputs.tf
 │       └── variables.tf
 ├── README.md
+└── stg
+    ├── main.tf
+    ├── provider.tf
+    └── variables.tf
+
+6 directories, 15 files
 ```
 
 ## Initialise Variables
