@@ -16,7 +16,7 @@ export TF_VAR_azure_client_secret='4vn8Qxxxxx-xxx-xxx'
 
 ### Execution
 
-Navigate to the corresponding folder and follow the steps below.
+Navigate to the corresponding environment folder (ex: dev or stg) and follow the steps below.
 
 - Initialise: terraform init
 - Validate: terraform validate
