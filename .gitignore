@@ -465,3 +465,6 @@ terraform.rc
 
 ## Terragrunt
 .terragrunt-cache
+
+.DS_Store
+.DS_Store/*
