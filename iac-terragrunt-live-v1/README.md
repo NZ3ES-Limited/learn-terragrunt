@@ -23,10 +23,10 @@ iac-terragrunt-live-v1
 ## Initialise Variables
 
 ```shell
-export TG_azure_client_secret='4vn8Qxxxxx-xxx-xxx'
-export TG_azure_subscription='xxxx-xxx-xxxx-xx-xxxxx'
-export TG_azure_tenant_id='xxxx-xxx-xxxx-xx-xxxxx'
-export TG_azure_client_id='xxxx-xxx-xxxx-xx-xxxxx'
+export TF_VAR_azure_client_secret='4vn8Qxxxxx-xxx-xxx'
+export TF_VAR_azure_subscription='xxxx-xxx-xxxx-xx-xxxxx'
+export TF_VAR_azure_tenant_id='xxxx-xxx-xxxx-xx-xxxxx'
+export TF_VAR_azure_client_id='xxxx-xxx-xxxx-xx-xxxxx'
 ```
 
 ## Execution

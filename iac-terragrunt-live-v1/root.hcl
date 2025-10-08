@@ -18,10 +18,10 @@ generate "provider" {
   if_exists = "overwrite_terragrunt"
   contents  = <<EOF
 provider "azurerm" {
-  subscription_id = "${get_env("TG_azure_subscription")}"
-  client_id       = "${get_env("TG_azure_client_id", "default_client_id")}"
-  client_secret   = "${get_env("TG_azure_client_secret")}"
-  tenant_id       = "${get_env("TG_azure_tenant_id")}"
+  subscription_id = "${get_env("TF_VAR_azure_subscription")}"
+  client_id       = "${get_env("TF_VAR_azure_client_id", "default_client_id")}"
+  client_secret   = "${get_env("TF_VAR_azure_client_secret")}"
+  tenant_id       = "${get_env("TF_VAR_azure_tenant_id")}"
   features {}
 }
 EOF
