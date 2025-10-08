@@ -3,7 +3,8 @@ include "root" {
 }
 
 terraform {
-  source = "../../../iac-terraform-live-v2-modules/modules/network"
+  # source = "../../../iac-terraform-live-v2-modules/modules/network"
+  source = "git@github.com:NZ3ES-Limited/learn-terragrunt.git//iac-terraform-live-v2-modules/modules/network?ref=main" # Downloading Terraform configurations from git::ssh://git@github.com/NZ3ES-Limited/learn-terragrunt.git?ref=main into ./.terragrunt-cache/z_aOuZBTyYIG-ZINyE0Tws1i5E4/mnd2f5d_1ggUyqVZynPFjHq7mDU
 }
 
 inputs = {
