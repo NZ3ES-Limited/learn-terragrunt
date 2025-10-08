@@ -18,7 +18,7 @@ dependency "network" {
   }
 
   # Allow the dependency outputs to be empty during plan/validate
-  mock_outputs_allowed_terraform_commands = ["validate", "init"]
+  mock_outputs_allowed_terraform_commands = ["validate", "plan", "init"]
 }
 
 inputs = {
