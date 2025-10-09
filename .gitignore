@@ -465,6 +465,7 @@ terraform.rc
 
 ## Terragrunt
 .terragrunt-cache
+.terragrunt-stack
 
 .DS_Store
 .DS_Store/*

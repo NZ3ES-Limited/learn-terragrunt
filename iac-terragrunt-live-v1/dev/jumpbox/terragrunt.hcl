@@ -3,7 +3,8 @@ terraform {
 }
 
 include "root" {
-  path = find_in_parent_folders("root.hcl")
+  path   = find_in_parent_folders("root.hcl")
+  expose = true
 }
 
 dependency "network" {
@@ -26,7 +27,7 @@ inputs = {
   resource_group_location     = dependency.network.outputs.resource_group_location
   snet_id_generic             = dependency.network.outputs.snet_id_generic
   snet_address_prefix_generic = join(",", dependency.network.outputs.snet_address_prefix_generic)
-  environment                 = "tg-dev"
+  environment                 = "tg-${include.root.locals.environment}"
   jumpbox_size                = "Standard_B2s"
   create_jumpbox              = true
   jumpbox_admin_username      = "azureuser"

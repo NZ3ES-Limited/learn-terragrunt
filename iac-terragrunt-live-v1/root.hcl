@@ -26,3 +26,8 @@ provider "azurerm" {
 }
 EOF
 }
+
+locals {
+  rel_path    = get_path_from_repo_root()
+  environment = split("/", local.rel_path)[1]
+}

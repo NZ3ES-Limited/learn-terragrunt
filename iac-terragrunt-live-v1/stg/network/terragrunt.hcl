@@ -1,5 +1,6 @@
 include "root" {
-  path = find_in_parent_folders("root.hcl")
+  path   = find_in_parent_folders("root.hcl")
+  expose = true
 }
 
 terraform {
@@ -7,7 +8,7 @@ terraform {
 }
 
 inputs = {
-  environment          = "tg-stg"
+  environment          = "tg-${include.root.locals.environment}"
   location             = "Australia Southeast" # OR australiasoutheast
   vnet_address         = "10.200.0.0/21"
   snet_address_aks     = "10.200.0.0/24"
